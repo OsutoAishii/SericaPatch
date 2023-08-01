@@ -1,0 +1,35 @@
+characters = {
+	UUU_mysterious_player = {
+		name = UUU_mysterious_player
+		portraits={
+			civilian = {
+				large = "gfx/leaders/UUU/UUU_mysterious_player.png"
+			}
+		}
+		
+		country_leader={
+			ideology= centrism
+			desc = UUU_mysterious_player_desc
+			traits={
+			}
+		}
+		country_leader={
+			ideology= socialism
+			desc = UUU_mysterious_player_desc
+			traits={
+			}
+		}
+		country_leader={
+			ideology= nazism
+			desc = UUU_mysterious_player_desc
+			traits={
+			}
+		}
+		country_leader={
+			ideology= marxism
+			desc = UUU_mysterious_player_desc
+			traits={
+			}
+		}
+	}
+}

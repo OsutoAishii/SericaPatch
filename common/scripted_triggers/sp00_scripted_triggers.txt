@@ -1,0 +1,24 @@
+DIPLOMACY_WAR_ENABLE_TRIGGER = {
+
+	NOT = {
+		ROOT = {
+			tag = UUU
+			custom_trigger_tooltip = {
+				NOT = {
+					has_global_flag = ARE_can_diplomacy_flag
+				}
+				tooltip = "无法外交"
+			}
+		}
+
+		FROM = {
+			tag = UUU
+			custom_trigger_tooltip = {
+				NOT = {
+					has_global_flag = ARE_can_diplomacy_flag
+				}
+				tooltip = "这个势力过于神秘，无法与其展开任何接触！"
+			}
+		}
+	}
+}

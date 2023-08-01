@@ -1,0 +1,827 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#装饰性标签
+			CHI = {
+				set_cosmetic_tag = NATIONAL_GOVERNMENT
+			}
+			PRC = {
+				set_cosmetic_tag = PEOPLES_GOVERNMENT
+			}
+			GXC = {
+				set_cosmetic_tag = GUANGDONG
+			}
+			YUN = {
+				set_cosmetic_tag = YUNNAN_WARLORD
+			}
+			SHX = {
+				set_cosmetic_tag = JIN_WARLORD
+			}
+			XSM = {
+				set_cosmetic_tag = MA_FAMILY_WARLORD
+			}
+			TIB = {
+				set_cosmetic_tag = TIBETAN_LOCAL_GOVERNMENT
+			}
+			SIK = {
+				set_cosmetic_tag = XINJIANG_LOCAL_GOVERNMENT
+			}
+			#西藏核心
+			if = {
+				#拥有西藏核心
+				limit = {
+					has_game_rule = {
+						rule = the_core_of_tibet
+						option = HAVING_A_CORE
+					}
+				}
+				322 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				757 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				758 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+			}
+			#藏南的归属
+			if = {
+				#由印度控制
+				limit = {
+					has_game_rule = {
+						rule = ownership_of_southern_tibet
+						option = BELONGING_TO_INDIA
+					}
+				}
+				434 = {
+					add_core_of = RAJ 
+				}
+				RAJ = {
+					transfer_state = 434
+				}
+			}
+			#香港的归属
+			if = {
+				#由赛里斯控制
+				limit = {
+					has_game_rule = {
+						rule = ownership_of_hong_kong
+						option = BELONGING_TO_SERICA_2
+					}
+				}
+				CHI = {
+					transfer_state = 326
+				}
+				#是否选择了“人民政府”
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = status_of_serica
+							option = PEOPLES_GOVERNMENT
+						}
+					}
+					PRC = {
+						transfer_state = 326
+					}
+				}
+			}
+			#澳门的归属
+			if = {
+				#由赛里斯控制
+				limit = {
+					has_game_rule = {
+						rule = ownership_of_macao
+						option = BELONGING_TO_SERICA_3
+					}
+				}
+				CHI = {
+					transfer_state = 729
+				}
+				#是否选择了“人民政府”
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = status_of_serica
+							option = PEOPLES_GOVERNMENT
+						}
+					}
+					PRC = {
+						transfer_state = 729
+					}
+				}
+			}
+			#广州湾的归属
+			if = {
+				#由赛里斯控制
+				limit = {
+					has_game_rule = {
+						rule = ownership_of_guangzhou_bay
+						option = BELONGING_TO_SERICA_4
+					}
+				}
+				CHI = {
+					transfer_state = 728
+				}
+				#是否选择了“人民政府”
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = status_of_serica
+							option = PEOPLES_GOVERNMENT
+						}
+					}
+					PRC = {
+						transfer_state = 728
+					}
+				}
+			}
+			#台湾岛的归属
+			if = {
+				#由赛里斯控制
+				limit = {
+					has_game_rule = {
+						rule = ownership_of_taiwan
+						option = BELONGING_TO_SERICA_5
+					}
+				}
+				CHI = {
+					transfer_state = 524
+				}
+				#是否选择了“人民政府”
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = status_of_serica
+							option = PEOPLES_GOVERNMENT
+						}
+					}
+					PRC = {
+						transfer_state = 524
+					}
+				}
+			}
+			#冀东地区的归属
+			if = {
+				#由赛里斯控制
+				limit = {
+					has_game_rule = {
+						rule = ownership_of_jidong
+						option = BELONGING_TO_SERICA_6
+					}
+				}
+				CHI = {
+					transfer_state = 609
+				}
+				#是否选择了“人民政府”
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = status_of_serica
+							option = PEOPLES_GOVERNMENT
+						}
+					}
+					PRC = {
+						transfer_state = 609
+					}
+				}
+			}
+			#大连的归属
+			if = {
+				#由满洲国控制
+				limit = {
+					has_game_rule = {
+						rule = ownership_of_dalian
+						option = BELONGING_TO_MAN
+					}
+				}
+				MAN = {
+					transfer_state = 745
+				}
+			}
+			if = {
+				#由赛里斯控制
+				limit = {
+					has_game_rule = {
+						rule = ownership_of_dalian
+						option = BELONGING_TO_SERICA_7
+					}
+				}
+				CHI = {
+					transfer_state = 745
+				}
+				#是否选择了“人民政府”
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = status_of_serica
+							option = PEOPLES_GOVERNMENT
+						}
+					}
+					PRC = {
+						transfer_state = 745
+					}
+				}
+			}
+			#赛里斯的状态
+			if = {
+				#统合军阀
+				limit = {
+					has_game_rule = {
+						rule = status_of_serica
+						option = UNIFIED_WARLORDS
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TIB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SIK
+						transfer_troops = yes
+					}
+				}
+				PRC = {
+					transfer_state = 746
+					transfer_state = 621
+				}
+				322 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				757 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				758 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+			}
+			if = {
+				#两党割据
+				limit = {
+					has_game_rule = {
+						rule = status_of_serica
+						option = BIPARTISAN_SEPARATISM
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}
+					transfer_state = 753
+				}
+				PRC = {
+					annex_country = {
+						target = TIB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SIK
+						transfer_troops = yes
+					}
+				}
+				322 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				757 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				758 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+			}
+			if = {
+				#国民政府
+				limit = {
+					has_game_rule = {
+						rule = status_of_serica
+						option = NATIONAL_GOVERNMENT
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TIB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SIK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PRC
+						transfer_troops = yes
+					}
+				}
+				322 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				757 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				758 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+			}
+			if = {
+				#人民政府
+				limit = {
+					has_game_rule = {
+						rule = status_of_serica
+						option = PEOPLES_GOVERNMENT
+					}
+				}
+				PRC = {
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TIB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SIK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CHI
+						transfer_troops = yes
+					}
+				}
+				322 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				757 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+				758 = {
+					add_core_of = CHI
+					add_core_of = PRC
+				}
+			}
+			#伪满、伪蒙的命运
+			if = {
+				#日本的傀儡国
+				limit = {
+					has_game_rule = {
+						rule = the_fate_of_the_pseudo_government
+						option = JAPANS_PUPPET_STATE
+					}
+				}
+				MAN = {
+					set_cosmetic_tag = MAN_C
+				}
+				MEN = {
+					set_cosmetic_tag = MEN_C
+				}
+			}
+			if = {
+				#被日本吞并
+				limit = {
+					has_game_rule = {
+						rule = the_fate_of_the_pseudo_government
+						option = ANNEXATION_BY_JAPAN
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = MAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEN
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				#被日本吞并且整合
+				limit = {
+					has_game_rule = {
+						rule = the_fate_of_the_pseudo_government
+						option = ANNEXATION_BY_JAPAN_WITH_CORE
+					}
+				}
+				MAN = {
+					every_core_state = {
+						add_core_of = JAP
+					}
+				}
+				MEN = {
+					every_core_state = {
+						add_core_of = JAP
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = MAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEN
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				#独立
+				limit = {
+					has_game_rule = {
+						rule = the_fate_of_the_pseudo_government
+						option = INDEPENDENCE
+					}
+				}
+				JAP = {
+					set_autonomy = {
+						target = MAN
+						autonomy_state = autonomy_free
+					}
+					set_autonomy = {
+						target = MEN
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+			if = {
+				#由国民党控制
+				limit = {
+					has_game_rule = {
+						rule = the_fate_of_the_pseudo_government
+						option = BELONGS_TO_THE_NATIONALIST_GOVERNMENT
+					}
+				}
+				CHI = {
+					annex_country = {
+						target = MAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEN
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				#由共产党控制
+				limit = {
+					has_game_rule = {
+						rule = the_fate_of_the_pseudo_government
+						option = BELONGS_TO_THE_PEOPLES_GOVERNMENT
+					}
+				}
+				PRC = {
+					annex_country = {
+						target = MAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEN
+						transfer_troops = yes
+					}
+				}
+			}
+			#终极和谐
+			if = {
+				#启用
+				limit = {
+					has_game_rule = {
+						rule = super_harmony
+						option = YES
+					}
+				}
+				GXC = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				YUN = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				TIB = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				SHX = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				XSM = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				SIK = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				PRC = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				CHI = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				MAN = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				MEN = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				UUU = {
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TIB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SIK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PRC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CHI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEN
+						transfer_troops = yes
+					}
+					transfer_state = 728
+					transfer_state = 729
+					transfer_state = 326
+					transfer_state = 524
+					transfer_state = 609
+					transfer_state = 745
+				}
+			}
+			if = {
+				#启用(日本仍控制台湾)
+				limit = {
+					has_game_rule = {
+						rule = super_harmony
+						option = YES_TJ
+					}
+				}
+				GXC = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				YUN = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				TIB = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				SHX = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				XSM = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				SIK = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				PRC = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				CHI = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				MAN = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				MEN = {
+					every_core_state = {
+						add_core_of = UUU
+					}
+				}
+				UUU = {
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TIB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SIK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PRC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CHI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEN
+						transfer_troops = yes
+					}
+					transfer_state = 728
+					transfer_state = 729
+					transfer_state = 326
+					transfer_state = 609
+					transfer_state = 745
+				}
+			}
+			#日本旗帜无害化
+			if = {
+				#使用日之丸旗
+				limit = {
+					has_game_rule = {
+						rule = HARMLESS_TREATMENT_OF_JAPANESE_FLAGS
+						option = HARMLESS_TREATMENT
+					}
+				}
+				#日本国名简略化
+				if = {
+					#省略帝国称号
+					limit = {
+						has_game_rule = {
+							rule = SIMPLIFICATION_OF_NAMES_OF_JAPAN
+							option = SIMPLIFICATION
+						}
+					}
+					JAP = {
+						set_cosmetic_tag = JAPS
+					}
+				}
+			}
+			if = {
+				#使用旭日旗(海军左倾版)
+				limit = {
+					has_game_rule = {
+						rule = HARMLESS_TREATMENT_OF_JAPANESE_FLAGS
+						option = RISING_SUN_FLAG
+					}
+				}
+				#日本国名简略化
+				if = {
+					#使用帝国称号
+					limit = {
+						has_game_rule = {
+							rule = SIMPLIFICATION_OF_NAMES_OF_JAPAN
+							option = THE_EMPIRE_OF_JAPAN
+						}
+					}
+					JAP = {
+						set_cosmetic_tag = TEOJAP
+					}
+				}
+				if = {
+					#省略帝国称号
+					limit = {
+						has_game_rule = {
+							rule = SIMPLIFICATION_OF_NAMES_OF_JAPAN
+							option = SIMPLIFICATION
+						}
+					}
+					JAP = {
+						set_cosmetic_tag = TEOJAPS
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+capital = 608
+
+set_research_slots = 1
+
+set_stability = 1
+set_war_support = 1
+
+set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+}
+
+recruit_character = UUU_mysterious_player
+
+set_popularities = {
+	neutrality = 100
+	fascism = 0
+	democratic = 0
+	communism = 0
+}

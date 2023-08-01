@@ -1,0 +1,239 @@
+the_core_of_tibet = {
+	name = "THE_CORE_OF_TIBET"
+	group = "SERICA_PATCH"
+	default = {
+		name = HAVING_A_CORE
+		text = "HAVING_A_CORE_T"
+		desc = "HAVING_A_CORE_DESC"
+	}
+	option = {
+		name = NO_TIBET_CORE
+		text = "NO_TIBET_CORE_T"
+		desc = "NO_TIBET_CORE_DESC"
+	}
+}
+
+ownership_of_southern_tibet = {
+	name = "OWNERSHIP_OF_SOUTHERN_TIBET"
+	group = "SERICA_PATCH"
+	default = {
+		name = BELONGING_TO_SERICA
+		text = "BELONGING_TO_SERICA_T"
+		desc = "BELONGING_TO_SERICA_DESC"
+	}
+	option = {
+		name = BELONGING_TO_INDIA
+		text = "BELONGING_TO_INDIA_T"
+		desc = "BELONGING_TO_INDIA_DESC"
+	}
+}
+
+ownership_of_hong_kong = {
+	name = "OWNERSHIP_OF_HONG_KONG"
+	group = "SERICA_PATCH"
+	default = {
+		name = BELONGING_TO_THE_UK
+		text = "BELONGING_TO_THE_UK_T"
+		desc = "BELONGING_TO_THE_UK_DESC"
+	}
+	option = {
+		name = BELONGING_TO_SERICA_2
+		text = "BELONGING_TO_SERICA_2_T"
+		desc = "BELONGING_TO_SERICA_2_DESC"
+	}
+}
+
+ownership_of_macao = {
+	name = "OWNERSHIP_OF_MACAO"
+	group = "SERICA_PATCH"
+	default = {
+		name = BELONGING_TO_PORTUGAL
+		text = "BELONGING_TO_PORTUGAL_T"
+		desc = "BELONGING_TO_PORTUGAL_DESC"
+	}
+	option = {
+		name = BELONGING_TO_SERICA_3
+		text = "BELONGING_TO_SERICA_3_T"
+		desc = "BELONGING_TO_SERICA_3_DESC"
+	}
+}
+
+ownership_of_guangzhou_bay = {
+	name = "OWNERSHIP_OF_GUANGZHOU_BAY"
+	group = "SERICA_PATCH"
+	default = {
+		name = BELONGING_TO_FRANCE
+		text = "BELONGING_TO_FRANCE_T"
+		desc = "BELONGING_TO_FRANCE_DESC"
+	}
+	option = {
+		name = BELONGING_TO_SERICA_4
+		text = "BELONGING_TO_SERICA_4_T"
+		desc = "BELONGING_TO_SERICA_4_DESC"
+	}
+}
+
+ownership_of_taiwan = {
+	name = "OWNERSHIP_OF_TAIWAN"
+	group = "SERICA_PATCH"
+	default = {
+		name = BELONGING_TO_JAPAN
+		text = "BELONGING_TO_Japan_T"
+		desc = "BELONGING_TO_Japan_DESC"
+	}
+	option = {
+		name = BELONGING_TO_SERICA_5
+		text = "BELONGING_TO_SERICA_5_T"
+		desc = "BELONGING_TO_SERICA_5_DESC"
+	}
+}
+
+ownership_of_jidong = {
+	name = "OWNERSHIP_OF_JIDONG"
+	group = "SERICA_PATCH"
+	default = {
+		name = BELONGING_TO_JAPAN_2
+		text = "BELONGING_TO_Japan_2_T"
+		desc = "BELONGING_TO_Japan_2_DESC"
+	}
+	option = {
+		name = BELONGING_TO_SERICA_6
+		text = "BELONGING_TO_SERICA_6_T"
+		desc = "BELONGING_TO_SERICA_6_DESC"
+	}
+}
+
+ownership_of_dalian = {
+	name = "OWNERSHIP_OF_DALIAN"
+	group = "SERICA_PATCH"
+	default = {
+		name = BELONGING_TO_JAPAN_3
+		text = "BELONGING_TO_Japan_3_T"
+		desc = "BELONGING_TO_Japan_3_DESC"
+	}
+	option = {
+		name = BELONGING_TO_MAN
+		text = "BELONGING_TO_MAN_T"
+		desc = "BELONGING_TO_MAN_DESC"
+	}
+	option = {
+		name = BELONGING_TO_SERICA_7
+		text = "BELONGING_TO_SERICA_7_T"
+		desc = "BELONGING_TO_SERICA_7_DESC"
+	}
+}
+
+status_of_serica = {
+	name = "STATUS_OF_SERICA"
+	group = "SERICA_PATCH"
+	default = {
+		name = CARVING_UP_OF_A_COUNTRY_BY_WARLORDS
+		text = "CARVING_UP_OF_A_COUNTRY_BY_WARLORDS_T"
+		desc = "CARVING_UP_OF_A_COUNTRY_BY_WARLORDS_DESC"
+	}
+	option = {
+		name = UNIFIED_WARLORDS
+		text = "UNIFIED_WARLORDS_T"
+		desc = "UNIFIED_WARLORDS_DESC"
+	}
+	option = {
+		name = BIPARTISAN_SEPARATISM
+		text = "BIPARTISAN_SEPARATISM_T"
+		desc = "BIPARTISAN_SEPARATISM_DESC"
+	}
+	option = {
+		name = NATIONAL_GOVERNMENT
+		text = "NATIONAL_GOVERNMENT_T"
+		desc = "NATIONAL_GOVERNMENT_DESC"
+	}
+	option = {
+		name = PEOPLES_GOVERNMENT
+		text = "PEOPLES_GOVERNMENT_T"
+		desc = "PEOPLES_GOVERNMENT_DESC"
+	}
+}
+
+the_fate_of_the_pseudo_government = {
+	name = "THE_FATE_OF_THE_PSEUDO_GOVERNMENT"
+	group = "SERICA_PATCH"
+	default = {
+		name = JAPANS_PUPPET_STATE
+		text = "JAPANS_PUPPET_STATE_T"
+		desc = "JAPANS_PUPPET_STATE_DESC"
+	}
+	option = {
+		name = ANNEXATION_BY_JAPAN
+		text = "ANNEXATION_BY_JAPAN_T"
+		desc = "ANNEXATION_BY_JAPAN_DESC"
+	}
+	option = {
+		name = ANNEXATION_BY_JAPAN_WITH_CORE
+		text = "ANNEXATION_BY_JAPAN_WITH_CORE_T"
+		desc = "ANNEXATION_BY_JAPAN_WITH_CORE_DESC"
+	}
+	option = {
+		name = INDEPENDENCE
+		text = "INDEPENDENCE_T"
+		desc = "INDEPENDENCE_DESC"
+	}
+	option = {
+		name = BELONGS_TO_THE_NATIONALIST_GOVERNMENT
+		text = "BELONGS_TO_THE_NATIONALIST_GOVERNMENT_T"
+		desc = "BELONGS_TO_THE_NATIONALIST_GOVERNMENT_DESC"
+	}
+	option = {
+		name = BELONGS_TO_THE_PEOPLES_GOVERNMENT
+		text = "BELONGS_TO_THE_PEOPLES_GOVERNMENT_T"
+		desc = "BELONGS_TO_THE_PEOPLES_GOVERNMENT_DESC"
+	}
+}
+
+super_harmony = {
+	name = "SUPER_HARMONY"
+	group = "SERICA_PATCH"
+	default = {
+		name = NO
+		text = "NO_T"
+		desc = "NO_DESC"
+	}
+	option = {
+		name = YES
+		text = "YES_T"
+		desc = "YES_DESC"
+	}
+	option = {
+		name = YES_TJ
+		text = "YES_TJ_T"
+		desc = "YES_TJ_DESC"
+	}
+}
+
+HARMLESS_TREATMENT_OF_JAPANESE_FLAGS = {
+	name = "HARMLESS_TREATMENT_OF_JAPANESE_FLAGS"
+	group = "SERICA_PATCH"
+	default = {
+		name = HARMLESS_TREATMENT
+		text = "HARMLESS_TREATMENT_T"
+		desc = "HARMLESS_TREATMENT_DESC"
+	}
+	option = {
+		name = RISING_SUN_FLAG
+		text = "RISING_SUN_FLAG_T"
+		desc = "RISING_SUN_FLAG_DESC"
+	}
+}
+
+SIMPLIFICATION_OF_NAMES_OF_JAPAN = {
+	name = "SIMPLIFICATION_OF_NAMES_OF_JAPAN"
+	group = "SERICA_PATCH"
+	default = {
+		name = THE_EMPIRE_OF_JAPAN
+		text = "THE_EMPIRE_OF_JAPAN_T"
+		desc = "THE_EMPIRE_OF_JAPAN_DESC"
+	}
+	option = {
+		name = SIMPLIFICATION
+		text = "SIMPLIFICATION_T"
+		desc = "SIMPLIFICATION_DESC"
+	}
+}
