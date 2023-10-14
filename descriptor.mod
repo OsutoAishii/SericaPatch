@@ -8,5 +8,5 @@ tags={
 }
 picture="thumbnail.png"
 name="Serica Patch"
-supported_version="1.12.*"
+supported_version="1.13.*"
 remote_file_id="3012071989"
